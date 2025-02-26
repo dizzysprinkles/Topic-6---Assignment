@@ -12,6 +12,7 @@ namespace Topic_6___Assignment
             Console.WriteLine("Give me a maxmimum value");
             Int32.TryParse(Console.ReadLine(), out max);
             Console.WriteLine("Max is " + max);
+            // Check for if min is biiger than max or if max is smaller than min (which ever is asked first)
             // Take in min, max
             // Ask for ## between values, inclusive, integers
             // Keep going until user inputs a correct number
@@ -31,7 +32,6 @@ namespace Topic_6___Assignment
             // Separate the displaying of each roll of the two dice using some blank space or 
             //requiring an ENTER press. Make sure to draw each roll set. At the end, print the number of rolls that
             //were required to get doubles.
-
         }
 
         static void Main(string[] args)
