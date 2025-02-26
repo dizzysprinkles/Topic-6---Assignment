@@ -1,19 +1,36 @@
-﻿namespace Topic_6___Assignment
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Diagnostics.Metrics;
+using System;
+
+namespace Topic_6___Assignment
 {
     internal class Program
     {
-        public static void Prompter(int max, int min)
+        public static void Prompter()
         {
+            int max, min;
+            Console.WriteLine("Give me a maxmimum value");
+            Int32.TryParse(Console.ReadLine(), out max);
+            Console.WriteLine("Max is " + max);
+            // Take in min, max
+            // Ask for ## between values, inclusive, integers
+            // Keep going until user inputs a correct number
+
 
         }
 
         public static void Bank(string selection, double amount)
         {
-
+            //QUIT,  Transaction options - Deposit, withdrawal, bill payement, account balance update - in invalid, assume account balance update
+            // .75 per transaction
         }
 
         public static void Dice()
         {
+            // Dice class from before 
+            // Separate the displaying of each roll of the two dice using some blank space or 
+            //requiring an ENTER press. Make sure to draw each roll set. At the end, print the number of rolls that
+            //were required to get doubles.
 
         }
 
@@ -36,19 +53,22 @@
 
                 if (choice == "1")
                 {
-                    Console.WriteLine("You chose option 1");
+                    Console.WriteLine("You chose option 1 - Prompter");
                     Console.WriteLine("Hit ENTER to continue.");
                     Console.ReadLine();
+                    Prompter();
                 }
                 else if (choice == "2")
                 {
-                    Console.WriteLine("You chose option 2");
+                    Console.WriteLine("You chose option 2 - Banking Machine");
                     Console.WriteLine("Hit ENTER to continue.");
                     Console.ReadLine();
                 }
                 else if (choice == "3")
                 {
-
+                    Console.WriteLine("You chose option 3 - Doubles Roller");
+                    Console.WriteLine("Hit ENTER to continue.");
+                    Console.ReadLine();
 
                 }
 
