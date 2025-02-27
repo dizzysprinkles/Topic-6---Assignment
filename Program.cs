@@ -36,11 +36,9 @@ namespace Topic_6___Assignment
         public static void Bank()
         {
             string selection = "";
-            double deposit, withdrawal, payement, charge, accountBalance, minimumAmount;
+            double deposit, withdrawal, payement, charge, accountBalance;
             charge = 0.75;
             accountBalance = 150.00;
-            
-
 
             while (selection != "q" || selection != "quit")
             {
