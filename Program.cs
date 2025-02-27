@@ -245,9 +245,7 @@ namespace Topic_6___Assignment
                 {
                     Console.WriteLine("Thanks for playing!");
                     return;
-
                 }
-
                 else
                 {
                     Console.WriteLine("Invalid choice! Press ENTER to return the main menu.");
